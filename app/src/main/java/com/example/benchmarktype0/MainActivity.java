@@ -46,21 +46,4 @@ public class MainActivity extends Activity {
         messageDigest.digest();
     }
 
-    private final SensorEventListener mSensorEventListener = new SensorEventListener() {
-        @Override
-        public void onSensorChanged(SensorEvent event) {
-            //if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-            if (event.sensor.getType() == Sensor.TYPE_LINEAR_ACCELERATION) {
-                // Do work
-            } else if (event.sensor.getType() == Sensor.TYPE_GYROSCOPE) {
-                // Do work
-            } else if (event.sensor.getType() == Sensor.TYPE_MAGNETIC_FIELD) {
-                // Do work
-            }
-        }
-
-        @Override
-        public void onAccuracyChanged(Sensor sensor, int i) {
-        }
-    };
 }
